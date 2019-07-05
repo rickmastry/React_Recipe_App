@@ -10,7 +10,6 @@ class App extends Component {
     recipes: recipes,
     url: `${proxy}http://food2fork.com/api/search?key=${key}`,
     base_url: `${proxy}http://food2fork.com/api/search?key=${key}`,
-    details_id:35375,
     pageIndex: 1,
     search: '',
     query: '&q=',
