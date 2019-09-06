@@ -1,5 +1,6 @@
 {
-  "homepage": "http://rickmastry.github.io/React_Recipe_App",
+  "homepage": "https://rickmastry.github.io/React_Recipe_App",
+  
   "name": "getrecipe",
   "version": "0.1.0",
   "private": true,
@@ -30,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+   "resolutions": {
+    "/@babel/runtime": "7.5.0"
   }
 }

@@ -1,7 +1,6 @@
 export const recipe = {
   f2f_url: "http://food2fork.com/view/35382",
-  image_url:
-    "http://static.food2fork.com/Jalapeno2BPopper2BGrilled2BCheese2BSandwich2B12B500fd186186.jpg",
+  image_url:"http://static.food2fork.com/Jalapeno2BPopper2BGrilled2BCheese2BSandwich2B12B500fd186186.jpg",
   ingredients: [
     "2 jalapeno peppers, cut in half lengthwise and seeded",
     "2 slices sour dough bread",

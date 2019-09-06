@@ -3,13 +3,13 @@ import "./App.css";
 import {recipes} from './tempList';
 import RecipeList from './components/RecipeList';
 import RecipeDetails from './components/RecipeDetails';
-import {key, proxy} from './config';
+import {keyys, proxy} from './config';
 
 class App extends Component {
   state ={
-    recipes: recipes,
-    url: `${proxy}http://food2fork.com/api/search?key=${key}`,
-    base_url: `${proxy}http://food2fork.com/api/search?key=${key}`,
+    recipes: [],
+    url: `${proxy}http://food2fork.com/api/search?key=${keyys}`,
+    base_url: `${proxy}http://food2fork.com/api/search?key=${keyys}`,
     pageIndex: 1,
     search: '',
     query: '&q=',
