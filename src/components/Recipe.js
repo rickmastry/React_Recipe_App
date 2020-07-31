@@ -16,7 +16,7 @@ export default class Recipe extends Component {
           <div className="card">
             <img src={image_url} className="img-card-top" style={{height:"14rem"}} alt="recipe"/>
             <div className="card-body text-capitalize">
-             <h6>{title}</h6>
+             <h6>{title.substring(0,25)}...</h6>
              <h6 className="text-warning text-slanted">
               provided by {publisher}
              </h6>

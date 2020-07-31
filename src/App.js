@@ -3,13 +3,13 @@ import "./App.css";
 import {recipes} from './tempList';
 import RecipeList from './components/RecipeList';
 import RecipeDetails from './components/RecipeDetails';
-import {keyys, proxy} from './config';
+import {key, proxy} from './config';
 
 class App extends Component {
   state ={
     recipes: [],
-    url: `${proxy}http://food2fork.com/api/search?key=${keyys}`,
-    base_url: `${proxy}http://food2fork.com/api/search?key=${keyys}`,
+    url: `${proxy}https://recipesapi.herokuapp.com/api/search?key=${key}`,
+    base_url: `${proxy}https://recipesapi.herokuapp.com/api/search?key=${key}`,
     pageIndex: 1,
     search: '',
     query: '&q=',
@@ -27,9 +27,10 @@ class App extends Component {
       }else{
         this.setState(()=>{
           return {recipes:jsonData.recipes}
+          
         })
       }
-
+    
     } catch(error){
       console.log(error);
     }
