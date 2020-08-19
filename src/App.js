@@ -3,13 +3,13 @@ import "./App.css";
 import {recipes} from './tempList';
 import RecipeList from './components/RecipeList';
 import RecipeDetails from './components/RecipeDetails';
-import {key, proxy} from './config';
+import {proxy} from './config';
 
 class App extends Component {
   state ={
     recipes: [],
-    url: `${proxy}https://recipesapi.herokuapp.com/api/search?key=${key}`,
-    base_url: `${proxy}https://recipesapi.herokuapp.com/api/search?key=${key}`,
+    url: `${proxy}https://recipesapi.herokuapp.com/api/search?`,
+    base_url: `${proxy}https://recipesapi.herokuapp.com/api/search?`,
     pageIndex: 1,
     search: '',
     query: '&q=',
